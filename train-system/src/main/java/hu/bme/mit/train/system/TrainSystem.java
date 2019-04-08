@@ -34,7 +34,7 @@ public class TrainSystem {
         }
     };
 		Timer t = new Timer();
-		t.schedule(task, 500);
+		t.schedule(task, 0, 500);
 	}
 
 }
