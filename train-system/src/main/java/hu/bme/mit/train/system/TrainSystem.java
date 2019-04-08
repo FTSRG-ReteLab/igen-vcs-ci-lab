@@ -25,4 +25,14 @@ public class TrainSystem {
 		return user;
 	}
 
+	public TrainSystem() {
+		Timer timer = new Timer();
+		TimerTask task = new TimerTask {
+				public void run() {
+					controller.followSpeed();
+				}
+		}
+		timer.schedule(task, 1000, 1000);
+	}
+
 }
